@@ -1,6 +1,5 @@
 /**
  * 扫码获取京东cookie
- * Modify from FanchangWang https://github.com/FanchangWang
  */
 const $ = new Env('扫码获取京东cookie');
 const qrcode = require('qrcode-terminal');
