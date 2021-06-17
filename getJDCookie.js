@@ -1,5 +1,5 @@
 /**
- * 扫码获取京东cookie
+ * 扫码获取京东cookie 测试github提交
  */
 const $ = new Env('扫码获取京东cookie');
 const qrcode = require('qrcode-terminal');
