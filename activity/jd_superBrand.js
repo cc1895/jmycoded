@@ -22,10 +22,10 @@ cron "30 11 * * *" script-path=https://raw.githubusercontent.com/Wenmoux/scripts
  */
 const $ = new Env('特物ZX联想');
 //Node.js用户请在jdCookie.js处填写京东ck;
-const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
+const jdCookieNode = $.isNode() ? require('../jdCookie.js') : '';
 
 const randomCount = $.isNode() ? 20 : 5;
-const notify = $.isNode() ? require('./sendNotify') : '';
+const notify = $.isNode() ? require('../sendNotify') : '';
 let merge = {}
 let codeList = []
 //IOS等用户直接用NobyDa的jd cookie
