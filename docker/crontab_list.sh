@@ -129,3 +129,5 @@
 5 0 * * * node /scripts/jx_sign.js >> /scripts/logs/jx_sign.log 2>&1
 #极速版 百元生活费 赚金币 邀请好友
 0 5 * * * node /scripts/jd_zjb.js >> /scripts/logs/jd_zjb.log 2>&1
+#京享值PK
+15 0,6,13,19,21 * * * node /scripts/jd_ddo_pk.js >> /scripts/logs/jd_ddo_pk.log 2>&1
