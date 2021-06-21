@@ -127,3 +127,5 @@
 15 0,12,22 * * * node /scripts/jd_jxmc.js >> /scripts/logs/jd_jxmc.log 2>&1
 #京喜签到
 5 0 * * * node /scripts/jx_sign.js >> /scripts/logs/jx_sign.log 2>&1
+#极速版 百元生活费 赚金币 邀请好友
+0 5 * * * node /scripts/jd_zjb.js >> /scripts/logs/jd_zjb.log 2>&1
