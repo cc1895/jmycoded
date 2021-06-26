@@ -1,6 +1,6 @@
 /* 
 点点券，可以兑换无门槛红包（1元，5元，10元，100元，部分红包需抢购） 
-Last Modified time: 2021 - 06 - 21  
+Last Modified time: 2021-06-21  
 活动入口：京东APP-领券中心/券后9.9-领点点券 [活动地址](https://h5.m.jd.com/babelDiy/Zeus/41Lkp7DumXYCFmPYtU3LTcnTTXTX/index.html) 
 脚本兼容: QuantumultX, Surge, Loon, JSBox, Node.js 
 ===============Quantumultx=============== 
@@ -38,7 +38,7 @@ const UA = require('./USER_AGENTS.js').USER_AGENT;
 const URL = 'https://h5.m.jd.com/babelDiy/Zeus/41Lkp7DumXYCFmPYtU3LTcnTTXTX/index.html'; 
 const REG_SCRIPT = /<script src="([^><]+\/(main\.\w+\.js))\?t=\d+">/gm; 
 const REG_ENTRY = /^(.*?\.push\(\[)(\d+,\d+)/; 
-const REG_PIN = /pt_pin=(\w+?);/m; 
+const REG_PIN = /pt_pin=([^; ]+)(?=;?)/; 
 const KEYWORD_MODULE = 'get_risk_result:'; 
 const DATA = {appid:'50082',sceneid:'DDhomePageh5'}; 
 let smashUtils; 
@@ -258,7 +258,7 @@ function showMsg() {
     // if ($.isNode() && $.totalScore >= 20000 && nowTimes.getHours() >= 20) await notify.sendNotify(`${$.name} - 京东账号${$.index} - ${$.nickName}`, `京东账号${$.index} ${$.nickName}\n当前${$.name}：${$.totalScore}个\n可兑换无门槛红包：${$.totalScore / 1000}元\n点击链接即可去兑换(注：此红包具有时效性)\n↓↓↓ \n\n ${openUrl} \n\n ↑↑↑`, { url: openUrl }) 
     if ($.isNode() && nowTimes.getHours() >= 20 && (process.env.DDQ_NOTIFY_CONTROL ? process.env.DDQ_NOTIFY_CONTROL === 'false' : !!1)) { 
       allMessage += `京东账号${$.index} ${$.nickName}\n当前${$.name}：${$.totalScore}个\n可兑换无门槛红包：${$.totalScore / 1000}元\n(京东APP->领券->左上角点点券.注：此红包具有时效性)${$.index !== cookiesArr.length ? '\n\n' : `\n↓↓↓ \n\n "https://h5.m.jd.com/babelDiy/Zeus/41Lkp7DumXYCFmPYtU3LTcnTTXTX/index.html" \n\n ↑↑↑`}` 
-      allMessage += `红包将在6.21日清空，请及时兑换` 
+      
     } 
     resolve() 
   }) 
