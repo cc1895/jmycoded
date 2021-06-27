@@ -5,6 +5,6 @@
 /box.dat
 /CookieSet.json
 /logs
-/JD_DailyBonus.js
+#/JD_DailyBonus.js
 /result.txt
-/jdCookie.js
+#/jdCookie.js
