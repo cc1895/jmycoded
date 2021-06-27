@@ -63,8 +63,8 @@ const JD_API_HOST = 'https://api.m.jd.com/api';
   }
   ]
 */
-  await getAuthorShareCode('https://#/jd_zz.json');
-  await getRandomCode();
+  //await getAuthorShareCode('https://#/jd_zz.json');
+  //await getRandomCode();
   for (let i = 0; i < cookiesArr.length; i++) {
     if (cookiesArr[i]) {
       cookie = cookiesArr[i];
