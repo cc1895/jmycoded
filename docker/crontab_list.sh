@@ -132,4 +132,6 @@
 #东东电竞经理
 15 10 * * * node /scripts/jd_zooElecsport.js >> /scripts/logs/jd_zooElecsport.log 2>&1
 #柠檬众筹好物上新
-20 12,14 * * * * * * node /scripts/jd_hwsx.js >> /scripts/logs/jd_hwsx.log 2>&1
+20 12,14 * * * node /scripts/jd_hwsx.js >> /scripts/logs/jd_hwsx.log 2>&1
+#柠檬推一推
+0 0 * * * node /scripts/jd_tyt.js >> /scripts/logs/jd_tyt.log 2>&1
