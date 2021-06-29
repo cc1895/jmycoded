@@ -140,4 +140,6 @@
 #欧洲狂欢杯
 55 59 9  * * node /scripts/jd_europeancup.js >> /scripts/logs/jd_europeancup.log 2>&1
 #星系牧场
-#1 0-23/2 * * * node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1
+1 0-23/2 * * * node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1
+#天降红包
+30 7 * * * node /scripts/jd_SplitRedPacket.js >> /scripts/logs/jd_SplitRedPacket.log 2>&1
