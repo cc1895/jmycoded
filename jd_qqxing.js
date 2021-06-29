@@ -107,17 +107,17 @@ $.shareuuid = ""
                     if(!Exchange){console.log("你 默认 不兑换东西,请自行进去活动兑换")}
                     message += `【京东账号${$.index}】${$.nickName || $.UserName}\n${$.cow} 兑换京🐶 ${$.exchange}  ${$.drawresult}\n`
                 } else {
-                  $.msg($.name, "", "跑不起来了~请自己进去一次牧场")
+                    $.msg($.name, "", "跑不起来了~请自己进去一次牧场")
                 }
             }
         }
         if (message.length != 0) {
         if ($.isNode()) {
-           await notify.sendNotify("星系牧场", `${message}\n牧场入口：QQ星儿童牛奶京东自营旗舰店->星系牧场\n\n吹水群：https://t.me/wenmouxx`);
-   }  else {
+            await notify.sendNotify("星系牧场", `${message}\n牧场入口：QQ星儿童牛奶京东自营旗舰店->星系牧场\n\n吹水群：https://t.me/wenmouxx`);
+    }  else {
             $.msg($.name, "", '星系牧场' + message)
         }
-           }
+            }
     })()
     .catch((e) => $.logErr(e))
     .finally(() => $.done())
