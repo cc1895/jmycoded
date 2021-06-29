@@ -135,3 +135,9 @@
 20 12,14 * * * node /scripts/jd_hwsx.js >> /scripts/logs/jd_hwsx.log 2>&1
 #柠檬推一推
 0 0 * * * node /scripts/jd_tyt.js >> /scripts/logs/jd_tyt.log 2>&1
+#东东乐园
+30 7 * * * node /scripts/jd_ddnc_farmpark.js >> /scripts/logs/jd_ddnc_farmpark.log 2>&1
+#欧洲狂欢杯
+55 59 9  * * node /scripts/jd_europeancup.js >> /scripts/logs/jd_europeancup.log 2>&1
+#星系牧场
+1 0-23/2 * * * node /scripts/jd_qqxing.js >> /scripts/logs/jd_qqxing.log 2>&1
