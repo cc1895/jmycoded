@@ -111,7 +111,7 @@ $.shareuuid = "eaa46f9183c24806ab5dc9a435dc70d4"
                 }
             }
         }
-        if (message.length != 0) {
+        if (message.length != 0&new Date().getHours() == 11) {
         if ($.isNode()) {
             await notify.sendNotify("星系牧场", `${message}\n牧场入口：QQ星儿童牛奶京东自营旗舰店->星系牧场\n\n吹水群：https://t.me/wenmouxx`);
     }  else {
