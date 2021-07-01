@@ -14,7 +14,7 @@ scripts_base_url_2=https://ghproxy.com/https://github.com/Youthsongs/QuanX/blob/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
 # 将相应作者的脚本填写到以下变量中
-my_scripts_list_1="jd_wsdlb.js jd_zxry.js jd_zooElecsport.js jd_zjb.js jd_tyt.js jd_superBrand.js jd_SplitRedPacket.js jd_qqxing.js jd_hwsx.js jd_europeancup.js jd_ddo_pk.js jd_ddnc_farmpark.js jd_xtg_help.js"
+my_scripts_list_1="jd_lsj.js jd_wsdlb.js jd_zxry.js jd_zooElecsport.js jd_zjb.js jd_tyt.js jd_superBrand.js jd_SplitRedPacket.js jd_qqxing.js jd_hwsx.js jd_europeancup.js jd_ddo_pk.js jd_ddnc_farmpark.js jd_xtg_help.js"
 my_scripts_list_2="jay_member_olb.js jd_party_night.jd jd_tcl.js jd_unbind.js z_tcl_liling.js"
 
 ## 由于CDN代理无法实时更新文件内容，目前使用本人的脚本收集库以解决不能访问 Github 的问题  
@@ -97,3 +97,4 @@ sed -i "s|bash jd jay_member_olb|bash ${ShellDir}/jd.sh jay_member_olb|g" ${List
 sed -i "s|bash jd z_tcl_liling|bash ${ShellDir}/jd.sh z_tcl_liling|g" ${ListCron}
 sed -i "s|bash jd jd_zxry|bash ${ShellDir}/jd.sh jd_zxry|g" ${ListCron}
 sed -i "s|bash jd jd_wsdlb|bash ${ShellDir}/jd.sh jd_wsdlb|g" ${ListCron}
+sed -i "s|bash jd jd_lsj|bash ${ShellDir}/jd.sh jd_lsj|g" ${ListCron}
