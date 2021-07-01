@@ -16,16 +16,9 @@ scripts_base_url_1=https://github.com/sltalex/jmycoded/blob/master/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
 # 将相应作者的脚本填写到以下变量中
-my_scripts_list_1="jd_zooElecsport.js"
-my_scripts_list_2="jd_zjb.js"
-my_scripts_list_3="jd_tyt.js"
-my_scripts_list_4="jd_superBrand.js"
-my_scripts_list_5="jd_SplitRedPacket.js"
-my_scripts_list_6="jd_qqxing.js"
-my_scripts_list_7="jd_hwsx.js"
-my_scripts_list_8="jd_europeancup.js"
-my_scripts_list_9="jd_ddo_pk.js"
-my_scripts_list_10="jd_ddnc_farmpark.js"
+my_scripts_list_1="jd_zooElecsport.js jd_zjb.js jd_tyt.js jd_superBrand.js jd_SplitRedPacket.js jd_qqxing.js jd_hwsx.js jd_europeancup.js jd_ddo_pk.js jd_ddnc_farmpark.js"
+#my_scripts_list_2="jd_zjb.js"
+
 
 
 
