@@ -11,19 +11,22 @@ author_list="sltalex"
 # 2.将地址最后的 “脚本名称+后缀” 剪切到下一个变量里（my_scripts_list_xxx）
 ## 目前使用本人收集的脚本库项目用于代替 CDN 加速
 scripts_base_url_1=https://ghproxy.com/https://github.com/sltalex/jmycoded/blob/master/
-
+scripts_base_url_2=https://ghproxy.com/https://github.com/Youthsongs/QuanX/blob/main/scripts/
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
 # 将相应作者的脚本填写到以下变量中
-my_scripts_list_1="jd_zooElecsport.js jd_zjb.js jd_tyt.js jd_superBrand.js jd_SplitRedPacket.js jd_qqxing.js jd_hwsx.js jd_europeancup.js jd_ddo_pk.js jd_ddnc_farmpark.js"
-#my_scripts_list_2="jd_zjb.js"
+my_scripts_list_1="jd_zooElecsport.js jd_zjb.js jd_tyt.js jd_superBrand.js jd_SplitRedPacket.js jd_qqxing.js jd_hwsx.js jd_europeancup.js jd_ddo_pk.js jd_ddnc_farmpark.js jd_xtg_help.js"
+my_scripts_list_2="jay_member_olb.js jd_party_night.jd jd_tcl.js jd_unbind.js z_tcl_liling.js"
 
 
 
 
-## 由于CDN代理无法实时更新文件内容，目前使用本人的脚本收集库以解决不能访问 Github 的问题
-
+## 由于CDN代理无法实时更新文件内容，目前使用本人的脚本收集库以解决不能访问 Github 的问题  
+##jd_unbind 注销会员卡
+#jd_tcl 球队赢好礼
+#jd_party_night 沸腾之夜
+#jay_member_olb 欧乐
 ##############################  随  机  函  数  ##############################
 rand() {
     min=$1
@@ -92,3 +95,8 @@ sed -i "s|bash jd jd_hwsx|bash ${ShellDir}/jd.sh jd_hwsx|g" ${ListCron}
 sed -i "s|bash jd jd_europeancup|bash ${ShellDir}/jd.sh jd_europeancup|g" ${ListCron}
 sed -i "s|bash jd jd_ddo_pk|bash ${ShellDir}/jd.sh jd_ddo_pk|g" ${ListCron}
 sed -i "s|bash jd jd_ddnc_farmpark|bash ${ShellDir}/jd.sh jd_ddnc_farmpark|g" ${ListCron}
+sed -i "s|bash jd jd_xtg_help|bash ${ShellDir}/jd.sh jd_xtg_help|g" ${ListCron}
+sed -i "s|bash jd jd_tcl|bash ${ShellDir}/jd.sh jd_tcl|g" ${ListCron}
+sed -i "s|bash jd jd_party_night|bash ${ShellDir}/jd.sh jd_party_night|g" ${ListCron}
+sed -i "s|bash jd jay_member_olb|bash ${ShellDir}/jd.sh jay_member_olb|g" ${ListCron}
+sed -i "s|bash jd z_tcl_liling|bash ${ShellDir}/jd.sh z_tcl_liling|g" ${ListCron}
