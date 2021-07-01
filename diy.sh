@@ -10,7 +10,7 @@ author_list="sltalex"
 # 1.从作者库中随意挑选一个脚本地址，每个作者的地址添加一个即可，无须重复添加
 # 2.将地址最后的 “脚本名称+后缀” 剪切到下一个变量里（my_scripts_list_xxx）
 ## 目前使用本人收集的脚本库项目用于代替 CDN 加速
-scripts_base_url_1=https://github.com/sltalex/jmycoded/blob/master/
+scripts_base_url_1=https://ghproxy.com/https://github.com/sltalex/jmycoded/blob/master/
 
 ## 添加更多脚本地址URL示例：scripts_base_url_3=https://raw.sevencdn.com/whyour/hundun/master/quanx/
 
