@@ -17,7 +17,7 @@ const jdCookieNode = $.isNode() ? require('./jdCookie.js') : '';
 //IOS等用户直接用NobyDa的jd cookie
 let cookiesArr = [], cookie = '', message;
 let allMessage = '';
-let shareCode = '';
+let shareCode = '20D7CD491EC3D1AEDE0DE9C37E5C8784';
 if (process.env.shareCode) {
   shareCode = process.env.shareCode;
 }
@@ -313,7 +313,7 @@ function helpme1() {
                 let options = {
     url: `https://api.m.jd.com`,
 
-    body: `functionId=current_activity&body={"shareCode":"CC0C33E18BD49F86E1B7FDA7778CDE67AD1DAAB9A3E3F6CBAFDE81EEB7393333"}&client=wh5&clientVersion=1.0.0&osVersion=10&uuid=7049442d7e415232`,
+    body: `functionId=current_activity&body={"shareCode":"20D7CD491EC3D1AEDE0DE9C37E5C8784"}&client=wh5&clientVersion=1.0.0&osVersion=10&uuid=7049442d7e415232`,
 headers: {
 "Origin": "https://h5.m.jd.com",
 "Host": "api.m.jd.com",
