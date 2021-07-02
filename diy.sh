@@ -3,23 +3,24 @@
 
 ##############################  作  者  昵  称  （必填）  ##############################
 # 使用空格隔开
-author_list="sltalex Youthsongs"
+author_list="sltalex"
 ##############################  作  者  脚  本  地  址  URL  （必填）  ##############################
 # 例如：https://raw.sevencdn.com/whyour/hundun/master/quanx/jx_nc.js
 # 1.从作者库中随意挑选一个脚本地址，每个作者的地址添加一个即可，无须重复添加
 # 2.将地址最后的 “脚本名称+后缀” 剪切到下一个变量里（my_scripts_list_xxx）
 ## 目前使用本人收集的脚本库项目用于代替 CDN 加速
 scripts_base_url_1=https://ghproxy.com/https://github.com/sltalex/jmycoded/blob/master/
-scripts_base_url_2=https://ghproxy.com/https://github.com/Youthsongs/QuanX/blob/main/scripts/
+#scripts_base_url_2=https://ghproxy.com/https://github.com/Youthsongs/QuanX/blob/main/scripts/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
 # 将相应作者的脚本填写到以下变量中
-my_scripts_list_1="jd_kanjia3.js jd_big_winner.js jd_qmwxj.js jd_ppdz.js jd_lsj.js jd_wsdlb.js jd_zxry.js jd_zooElecsport.js jd_zjb.js jd_tyt.js jd_superBrand.js jd_SplitRedPacket.js jd_qqxing.js jd_hwsx.js jd_europeancup.js jd_ddo_pk.js jd_ddnc_farmpark.js jd_xtg_help.js"
-my_scripts_list_2="jay_member_olb.js jd_party_night.jd jd_tcl.js jd_unbind.js z_tcl_liling.js"
+my_scripts_list_1="jay_member_olb.js jd_party_night.jd jd_tcl.js z_tcl_liling.js jd_kanjia3.js jd_big_winner.js jd_qmwxj.js jd_ppdz.js jd_lsj.js jd_wsdlb.js jd_zxry.js jd_zooElecsport.js jd_zjb.js jd_tyt.js jd_superBrand.js jd_SplitRedPacket.js jd_qqxing.js jd_hwsx.js jd_europeancup.js jd_ddo_pk.js jd_ddnc_farmpark.js jd_xtg_help.js"
+#my_scripts_list_2="jay_member_olb.js jd_party_night.jd jd_tcl.js z_tcl_liling.js"
 
 ## 由于CDN代理无法实时更新文件内容，目前使用本人的脚本收集库以解决不能访问 Github 的问题  
 ##jd_unbind 注销会员卡
 #jd_kanjia3  砍价
+#---jd_unbind.js
 ##############################  随  机  函  数  ##############################
 rand() {
     min=$1
@@ -72,6 +73,7 @@ done
 #rm -rf ${ScriptsDir}/jd_shakeBean.js
 #rm -rf ${ScriptsDir}/jd_super5G.js
 #rm -rf ${ScriptsDir}/jd_city_cash.js
+rm -rf ${ScriptsDir}/jd_unbind.js
 
 ##############################  修  正  定  时  任  务  ##############################
 ## 目前两个版本都做了软链接，但为了 Linux 旧版用户可以使用，继续将软链接更改为具体文件
