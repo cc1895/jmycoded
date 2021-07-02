@@ -1,10 +1,6 @@
 const jsname='🐱动物农场'
 const $ = Env(jsname)
 
-let DWNC_AUTH='openid=owcwB5LYICQHO7hvSzLpyrYUQSIs&sessid=nnnbmgdlv1tdchb2qvhstitkwatz';
-let DWNC_VERSION='1.1.8'
-let DWNC_UA='user-agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.138 Safari/537.36 MicroMessenger/6.5.2.501 NetType/WIFI MiniGame WindowsWechat'
-
 //login
 if ($request && $request.url.indexOf('getWsUrl') > -1) {
   $.log(`获取账号信息🎉: 成功\nurl: ${$request.url}`);
