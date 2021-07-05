@@ -14,7 +14,7 @@ scripts_base_url_1=https://ghproxy.com/https://github.com/sltalex/jmycoded/blob/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
 # 将相应作者的脚本填写到以下变量中
-my_scripts_list_1="jay_member_olb.js jd_party_night.jd z_tcl_liling.js jd_kanjia3.js jd_big_winner.js jd_qmwxj.js jd_ppdz.js jd_lsj.js jd_wsdlb.js jd_zxry.js jd_zooElecsport.js jd_zjb.js jd_tyt.js jd_superBrand.js jd_SplitRedPacket.js jd_qqxing.js jd_hwsx.js jd_europeancup.js jd_ddo_pk.js jd_ddnc_farmpark.js jd_xtg_help.js"
+my_scripts_list_1="jay_member_olb.js z_tcl_liling.js jd_kanjia3.js jd_big_winner.js jd_qmwxj.js jd_ppdz.js jd_lsj.js jd_wsdlb.js jd_zxry.js jd_zooElecsport.js jd_tyt.js jd_superBrand.js jd_SplitRedPacket.js jd_qqxing.js jd_europeancup.js jd_ddo_pk.js jd_ddnc_farmpark.js jd_xtg_help.js"
 #my_scripts_list_2="jay_member_olb.js jd_party_night.jd jd_tcl.js z_tcl_liling.js"
 
 ## 由于CDN代理无法实时更新文件内容，目前使用本人的脚本收集库以解决不能访问 Github 的问题  
@@ -74,6 +74,10 @@ done
 #rm -rf ${ScriptsDir}/jd_super5G.js
 #rm -rf ${ScriptsDir}/jd_city_cash.js
 rm -rf ${ScriptsDir}/jd_unbind.js
+rm -rf ${ScriptsDir}/jd_hwsx.js
+rm -rf ${ScriptsDir}/jd_party_night.js
+rm -rf ${ScriptsDir}/jd_zjb.js
+
 
 ##############################  修  正  定  时  任  务  ##############################
 ## 目前两个版本都做了软链接，但为了 Linux 旧版用户可以使用，继续将软链接更改为具体文件
@@ -81,17 +85,14 @@ rm -rf ${ScriptsDir}/jd_unbind.js
 ## 修正定时任务示例：sed -i "s|bash jd jd_test|bash ${ShellDir}/jd.sh test|g" ${ListCron}
 ##                 sed -i "s|bash jd jd_ceshi|bash ${ShellDir}/jd.sh ceshi|g" ${ListCron}
 sed -i "s|bash jd jd_zooElecsport|bash ${ShellDir}/jd.sh jd_zooElecsport|g" ${ListCron}
-sed -i "s|bash jd jd_zjb|bash ${ShellDir}/jd.sh jd_zjb|g" ${ListCron}
 sed -i "s|bash jd jd_tyt|bash ${ShellDir}/jd.sh jd_tyt|g" ${ListCron}
 sed -i "s|bash jd jd_superBrand|bash ${ShellDir}/jd.sh jd_superBrand|g" ${ListCron}
 sed -i "s|bash jd jd_SplitRedPacket|bash ${ShellDir}/jd.sh jd_SplitRedPacket|g" ${ListCron}
 sed -i "s|bash jd jd_qqxing|bash ${ShellDir}/jd.sh jd_qqxing|g" ${ListCron}
-sed -i "s|bash jd jd_hwsx|bash ${ShellDir}/jd.sh jd_hwsx|g" ${ListCron}
 sed -i "s|bash jd jd_europeancup|bash ${ShellDir}/jd.sh jd_europeancup|g" ${ListCron}
 sed -i "s|bash jd jd_ddo_pk|bash ${ShellDir}/jd.sh jd_ddo_pk|g" ${ListCron}
 sed -i "s|bash jd jd_ddnc_farmpark|bash ${ShellDir}/jd.sh jd_ddnc_farmpark|g" ${ListCron}
 sed -i "s|bash jd jd_xtg_help|bash ${ShellDir}/jd.sh jd_xtg_help|g" ${ListCron}
-sed -i "s|bash jd jd_party_night|bash ${ShellDir}/jd.sh jd_party_night|g" ${ListCron}
 sed -i "s|bash jd jay_member_olb|bash ${ShellDir}/jd.sh jay_member_olb|g" ${ListCron}
 sed -i "s|bash jd z_tcl_liling|bash ${ShellDir}/jd.sh z_tcl_liling|g" ${ListCron}
 sed -i "s|bash jd jd_zxry|bash ${ShellDir}/jd.sh jd_zxry|g" ${ListCron}
