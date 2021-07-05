@@ -934,7 +934,7 @@ if __name__ == '__main__':
     # accounts = "openid=xxx;sessid=xxx;&openid=xxx;&sessid=xxx;"
     accounts="openid=owcwB5LYICQHO7hvSzLpyrYUQSIs;sessid=nnnbmgdlv1tdchb2qvhstitkwatz;&openid=owcwB5CPUkFvdsgux3wbju0Idlv0;sessid=3d8y6hz20up97bgz10g6vl4jp2y6;"
     #1\my
-    #2\产星权
+    #2\loulou
     #accounts = os.getenv('DWNC_AUTH', '')
     if not accounts:
         print('请设置环境变量DWNC_AUTH', flush=True)
