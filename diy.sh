@@ -73,11 +73,7 @@ done
 #rm -rf ${ScriptsDir}/jd_shakeBean.js
 #rm -rf ${ScriptsDir}/jd_super5G.js
 #rm -rf ${ScriptsDir}/jd_city_cash.js
-rm -rf ${ScriptsDir}/jd_unbind.js
-rm -rf ${ScriptsDir}/jd_hwsx.js
-rm -rf ${ScriptsDir}/jd_party_night.js
-rm -rf ${ScriptsDir}/jd_zjb.js
-
+rm -rf ${ScriptsDir}/jd_enen.js
 
 ##############################  修  正  定  时  任  务  ##############################
 ## 目前两个版本都做了软链接，但为了 Linux 旧版用户可以使用，继续将软链接更改为具体文件
