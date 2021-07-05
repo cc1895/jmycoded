@@ -932,7 +932,7 @@ if __name__ == '__main__':
         return data
 
     # accounts = "openid=xxx;sessid=xxx;&openid=xxx;&sessid=xxx;"
-    accounts="openid=owcwB5LYICQHO7hvSzLpyrYUQSIs;sessid=nnnbmgdlv1tdchb2qvhstitkwatz"
+    accounts="openid=owcwB5LYICQHO7hvSzLpyrYUQSIs;sessid=nnnbmgdlv1tdchb2qvhstitkwatz;&openid=owcwB5CPUkFvdsgux3wbju0Idlv0;sessid=3d8y6hz20up97bgz10g6vl4jp2y6;"
     #1\my
     #2\产星权
     #accounts = os.getenv('DWNC_AUTH', '')
