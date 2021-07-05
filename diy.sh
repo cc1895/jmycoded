@@ -14,7 +14,7 @@ scripts_base_url_1=https://ghproxy.com/https://github.com/sltalex/jmycoded/blob/
 
 ##############################  作  者  脚  本  名  称  （必填）  ##############################
 # 将相应作者的脚本填写到以下变量中
-my_scripts_list_1="jay_member_olb.js z_tcl_liling.js jd_kanjia3.js jd_big_winner.js jd_qmwxj.js jd_ppdz.js jd_lsj.js jd_wsdlb.js jd_zxry.js jd_zooElecsport.js jd_tyt.js jd_superBrand.js jd_SplitRedPacket.js jd_qqxing.js jd_europeancup.js jd_ddo_pk.js jd_ddnc_farmpark.js jd_xtg_help.js"
+my_scripts_list_1="jd_jddj_bean.js jd_jddj_fruit.js jd_jddj_fruit_collectWater.js jd_jddj_getPoints.js jd_jddj_plantBeans.js jay_member_olb.js z_tcl_liling.js jd_kanjia3.js jd_big_winner.js jd_qmwxj.js jd_ppdz.js jd_lsj.js jd_wsdlb.js jd_zxry.js jd_zooElecsport.js jd_tyt.js jd_superBrand.js jd_SplitRedPacket.js jd_qqxing.js jd_europeancup.js jd_ddo_pk.js jd_ddnc_farmpark.js jd_xtg_help.js"
 #my_scripts_list_2="jay_member_olb.js jd_party_night.jd jd_tcl.js z_tcl_liling.js"
 
 ## 由于CDN代理无法实时更新文件内容，目前使用本人的脚本收集库以解决不能访问 Github 的问题  
@@ -97,3 +97,8 @@ sed -i "s|bash jd jd_lsj|bash ${ShellDir}/jd.sh jd_lsj|g" ${ListCron}
 sed -i "s|bash jd jd_ppdz|bash ${ShellDir}/jd.sh jd_ppdz|g" ${ListCron}
 sed -i "s|bash jd jd_qmwxj|bash ${ShellDir}/jd.sh jd_qmwxj|g" ${ListCron}
 sed -i "s|bash jd jd_big_winner|bash ${ShellDir}/jd.sh jd_big_winner|g" ${ListCron}
+sed -i "s|bash jd jd_jddj_bean|bash ${ShellDir}/jd.sh jd_jddj_bean|g" ${ListCron}
+sed -i "s|bash jd jd_jddj_fruit|bash ${ShellDir}/jd.sh jd_jddj_fruit|g" ${ListCron}
+sed -i "s|bash jd jd_jddj_fruit_collectWater|bash ${ShellDir}/jd.sh jd_jddj_fruit_collectWater|g" ${ListCron}
+sed -i "s|bash jd jd_jddj_getPoints|bash ${ShellDir}/jd.sh jd_jddj_getPoints|g" ${ListCron}
+sed -i "s|bash jd jd_jddj_plantBeans|bash ${ShellDir}/jd.sh jd_jddj_plantBeans|g" ${ListCron}
