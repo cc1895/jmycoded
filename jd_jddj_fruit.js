@@ -20,9 +20,9 @@ let lat = '30.' + Math.round(Math.random() * (99999 - 10000) + 10000);
 let lng = '114.' + Math.round(Math.random() * (99999 - 10000) + 10000);
 let cityid = Math.round(Math.random() * (1500 - 1000) + 1000);
 let cookies = [], notify = '';
-let scodes = [], jddjyqm = '';
+let scodes = [], jddjyqm = 'JD_79606be978a5000@2417b89855b3838&JD_b06aefb718a5000@2417c35f58b2232';
 if (process.env.jddjyqm) {
-  jddjyqm = process.env.jddjyqm;
+    jddjyqm = process.env.jddjyqm;
 }
 waterNum = 0, waterTimes = 0, shareCode = '', hzstr = '', msgStr = '';
 !(async() => {
