@@ -72,7 +72,7 @@ done
 #rm -rf ${ScriptsDir}/jd_axc.js
 #rm -rf ${ScriptsDir}/jd_shakeBean.js
 #rm -rf ${ScriptsDir}/jd_super5G.js
-#rm -rf ${ScriptsDir}/jd_city_cash.js
+rm -rf ${ScriptsDir}/jd_big_winner.js
 rm -rf ${ScriptsDir}/jd_enen.js
 
 ##############################  修  正  定  时  任  务  ##############################
