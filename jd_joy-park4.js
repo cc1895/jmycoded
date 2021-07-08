@@ -25,12 +25,10 @@ let cookiesArr = [], cookie = '', message;
 let codeList = []
 let codeList1 = []
 
-let joyinviterPin = '';
+let joyinviterPin = 'bkw053-4nxpO3PhuIpjZzw';
 if (process.env.joyinviterPin) {
   joyinviterPin = process.env.joyinviterPin;
 }
-
-
 
 if ($.isNode()) {
   Object.keys(jdCookieNode).forEach((item) => {
@@ -67,7 +65,7 @@ const JD_API_HOST = 'https://api.m.jd.com/client.action';
         }
         continue
       }
-     
+      
       
       await joyBaseInfo()
       await joyList()
@@ -113,7 +111,7 @@ headers: {
                       $.log(`\n===================================`)
                       $.log(`🐶旺财等级:${dj}\n🐶购买旺财等级:${gmdj}\n🐶当前金币:${jb}\n🐶邀请码:${yqm}\n===================================\n`)
 
-                     }else  if(data.errMsg == "操作失败"){
+                    }else  if(data.errMsg == "操作失败"){
                 
                     console.log("操作失败")
                 

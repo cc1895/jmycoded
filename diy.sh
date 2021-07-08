@@ -102,3 +102,4 @@ sed -i "s|bash jd jd_jddj_fruit|bash ${ShellDir}/jd.sh jd_jddj_fruit|g" ${ListCr
 sed -i "s|bash jd jd_jddj_fruit_collectWater|bash ${ShellDir}/jd.sh jd_jddj_fruit_collectWater|g" ${ListCron}
 sed -i "s|bash jd jd_jddj_getPoints|bash ${ShellDir}/jd.sh jd_jddj_getPoints|g" ${ListCron}
 sed -i "s|bash jd jd_jddj_plantBeans|bash ${ShellDir}/jd.sh jd_jddj_plantBeans|g" ${ListCron}
+sed -i "s|bash jd jd_joy_park3|bash ${ShellDir}/jd.sh jd_joy_park3|g" ${ListCron}
